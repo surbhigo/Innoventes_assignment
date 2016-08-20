@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "593611368555",
+    "firebase_url": "https://strange-team-124604.firebaseio.com",
+    "project_id": "strange-team-124604",
+    "storage_bucket": "strange-team-124604.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593611368555:android:1de54bfdfebec4e7",
+        "android_client_info": {
+          "package_name": "surbhi.example.com.assingment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593611368555-b2qe8gk4rlisrn5tepq87cmv7ro9knf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5a8-DemZKY-UxPL0S9NLEK0zv787cFro"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
