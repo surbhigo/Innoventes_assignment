@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.eclipse.egit.github.core.RepositoryCommit;
 import org.eclipse.egit.github.core.service.CommitService;
 
 import java.util.List;
@@ -71,10 +70,10 @@ public class Radapter extends RecyclerView.Adapter<Radapter.CustomViewHolder> {
         @Override
         public void onClick(View view) {
             CommitService commitService=new CommitService();
-            List<RepositoryCommit> repoCommits = commitService.getCommits();
-            if(repoCommits != null) {
+            //List<RepositoryCommit> repoCommits = commitService.getCommits();
+            //if(repoCommits != null) {
 
-            }
+           // }
             Intent intent = new Intent(context, CommitActivity.class);
             intent.putExtra(Config.REPOSITORY_URL, "<repo_url>");
             context.startActivity(intent);
