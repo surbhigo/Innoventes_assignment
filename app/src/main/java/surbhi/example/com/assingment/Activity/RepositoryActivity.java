@@ -10,16 +10,16 @@ import android.view.View;
 
 import java.util.ArrayList;
 
-import surbhi.example.com.assingment.Adapter.Radapter;
-import surbhi.example.com.assingment.Model.RepositoryList;
+import surbhi.example.com.assingment.Adapter.RepoAdapter;
 import surbhi.example.com.assingment.R;
 
 public class RepositoryActivity extends AppCompatActivity {
-     RecyclerView recyclerView;
+    RecyclerView recyclerView;
     RecyclerView.Adapter adapter;
     RecyclerView.LayoutManager layoutManager;
-    ArrayList<RepositoryList> list;
-    ArrayList<String>repos=new ArrayList<>();
+    static ArrayList<String> reposList;
+    static String userName;
+    static String password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,34 +34,32 @@ public class RepositoryActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
-        repos=getIntent().getStringArrayListExtra("repository");
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        //getting username ,password and repositories list
+
+        password=getIntent().getStringExtra("password");
+        reposList =getIntent().getStringArrayListExtra("repository");
+        userName=getIntent().getStringExtra("username");
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        adapter = new Radapter(repos,this);
-        //adapter=new Radapter(getData(),this);
+        adapter = new RepoAdapter(reposList,password,userName,this);
         recyclerView.setAdapter(adapter);
 
     }
 
-
-        public ArrayList<RepositoryList> getData() {
-            list = new ArrayList<>();
-
-            RepositoryList list1 =new RepositoryList();
-
-
-            list1.setTitle("Github login integration");
-            list1.setDescription("details of repository ");
-            list.add(list1);
-            return list;
-        }
-
     @Override
     public void onBackPressed() {
-        Intent intent=new Intent(this,MainActivity.class);
+        Intent intent=new Intent(this,LoginActivity.class);
         startActivity(intent);
+        finish();
     }
 }
 

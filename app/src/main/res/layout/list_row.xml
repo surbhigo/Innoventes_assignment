@@ -2,21 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="5sp">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="github login integration"
-        android:id="@+id/title"
-        android:textSize="25sp"/>
+    android:padding="5sp"
+    >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:id="@+id/description"
+        android:id="@+id/repoName"
         android:text="details of repository"/>
 
-
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="2dp"
+    android:background="#d3d3d3"></View>
 </LinearLayout>

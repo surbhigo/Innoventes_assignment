@@ -10,6 +10,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="surbhi.example.com.assingment.Activity.CommitActivity"
-    tools:showIn="@layout/activity_commit">
-
+    tools:showIn="@layout/activity_commit"
+  >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/commits">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RepositoryCommits : "
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textsize"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/commits"
+        android:layout_marginTop="40dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RepostioryCollaborator : "
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/collaboratesize"
+        android:layout_below="@+id/commits"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+    </LinearLayout>
 </RelativeLayout>

@@ -10,7 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Activity.RepositoryActivity"
-    tools:showIn="@layout/activity_reositority">
+    tools:showIn="@layout/activity_reositority"
+    >
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
