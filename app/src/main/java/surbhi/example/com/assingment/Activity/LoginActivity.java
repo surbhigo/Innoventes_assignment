@@ -40,9 +40,7 @@ public class LoginActivity extends AppCompatActivity {
     static final String MyPreference = "my_preference";
     static final String uName = "name_key";
     static final String uPassword = "password_key";
-
-    private surbhi.example.com.assingment.Model.Repository repository;
-    ArrayList<surbhi.example.com.assingment.Model.Repository> repos = new ArrayList<surbhi.example.com.assingment.Model.Repository>();
+    
     ArrayList<String> repoList = new ArrayList<String>();
 
     @Override
